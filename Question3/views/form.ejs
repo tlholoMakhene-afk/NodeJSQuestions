@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Grade Management System</title>
+    <style>
+        body { padding-top:50px; }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav >
+            <a  href="/">Student Grade Management System</a>
+            <ul > 
+              <li>
+                <a href="/newstudent">Add new student</a>
+              </li>
+            </ul>
+          </nav>
+    </header>
+
+    <main>
+        <div >
+            <div >
+                <div >
+                    <h1> Student Grade Details!</h1>
+                    <p></p>
+                    <form action="addstudent" method="post">
+                        <input type="text" name="name" placeholder="name" /><br />
+                        <input type="number" name="age" placeholder="age" /><br />
+                        <input type="number" name="grade" placeholder="grade" min="1" max="12" /><br />
+                        <input type="submit" value="Save Student"/>
+                    </form>
+                    <a href="/"><button>View all Student Grades</button></a><br>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

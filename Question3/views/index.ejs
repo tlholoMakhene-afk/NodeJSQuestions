@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Student Grade Management System</title>
+    <style>
+        body { padding-top:50px; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav >
+            <a  href="/">Student Grade Management System</a>
+            <ul > 
+              <li>
+                <a href="/newstudent">Add new student</a>
+              </li>
+            </ul>
+          </nav>
+    </header>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+            <th>Run Query</th>
+        </tr>
+        <% for (var i = 0; i < data.length; i++) { %>
+                <tr>
+                    <td><%=data[i].name %></td>
+                    <td><%=data[i].age %></td>
+                    <td><%=data[i].grade %></td>
+                    <td><a href="/grade/<%= data[i].grade%>"><button>Check students in grade <%=data[i].grade %></button></a></td>
+                </tr>
+        <%}%>
+    </table>
+    
+</body>
+</html>
